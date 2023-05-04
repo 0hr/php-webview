@@ -9,7 +9,7 @@ PHP bindings for [zserge's Webview](https://github.com/webview/webview)
 ```php
 <?php
 
-require_once '../../vendor/autoload.php';
+require_once './vendor/autoload.php';
 
 use PhpWebView\Example\RowContext;
 use PhpWebView\WebView;
@@ -46,4 +46,4 @@ $webview->bind('getList', function ($seq, $req, $context) use ($webview, &$list)
 });
 ```
 
-<img src="examples/bindings/bindings.png" width="330px">
+<img src="examples/bindings/binding.png" width="330px">
