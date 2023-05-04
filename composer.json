@@ -1,0 +1,16 @@
+{
+    "name": "0hr/phpwebview",
+    "description": "Php WebView",
+    "autoload": {
+        "psr-4": {
+            "PhpWebView\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "0hr",
+            "email": "harunrasit@pekacar.net"
+        }
+    ],
+    "require": {}
+}
