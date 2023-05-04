@@ -7,7 +7,7 @@ PHP bindings for [zserge's Webview](https://github.com/webview/webview)
 ### Hello World Application
 
 
-![Hello world Screenshoot](./example/helloworld/helloworld.png)
+<img src="./example/helloworld/helloworld.png" width="330px">
 
 ```php
 <?php
@@ -46,4 +46,5 @@ $webview->bind('getList', function ($seq, $req, $context) use ($webview, &$list)
     $webview->returnValue($seq, 0, $list);
 });
 ```
-![Binding Screenshoot](./example/binding/binding.png)
+
+<img src="./example/binding/binding.png" width="330px">
