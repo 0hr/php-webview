@@ -4,6 +4,7 @@
 
 PHP bindings for [zserge's Webview](https://github.com/webview/webview)
 
+
 ### Hello World Application [Example](https://github.com/0hr/php-webview/tree/main/examples/helloworld)
 
 ```php
@@ -11,7 +12,6 @@ PHP bindings for [zserge's Webview](https://github.com/webview/webview)
 
 require_once './vendor/autoload.php';
 
-use PhpWebView\Example\RowContext;
 use PhpWebView\WebView;
 use PhpWebView\WindowSizeHint;
 
@@ -47,3 +47,5 @@ $webview->bind('getList', function ($seq, $req, $context) use ($webview, &$list)
 ```
 
 <img src="examples/bindings/binding.png" width="330px">
+
+To build the library, run **src/webview/build.sh**

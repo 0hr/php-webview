@@ -147,6 +147,26 @@ class WebView
         $this->ffi->webview_bind($this->webview, $name, $newFunction, null);
     }
 
+    public function unbind($name): void
+    {
+        $this->ffi->webview_unbind($this->webview, $name);
+    }
+
+    public function eval(string $js): void
+    {
+        $this->ffi->webview_eval($this->webview, $js);
+    }
+
+    public function init(string $js): void
+    {
+        $this->ffi->webview_init($this->webview, $js);
+    }
+
+    public function navigate(string $url): void
+    {
+        $this->ffi->webview_navigate($this->webview, $url);
+    }
+
     public function run(): void
     {
         $this->ffi->webview_run($this->webview);

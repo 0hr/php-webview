@@ -2,7 +2,6 @@
 
 require_once '../../vendor/autoload.php';
 
-use PhpWebView\Example\RowContext;
 use PhpWebView\WebView;
 use PhpWebView\WindowSizeHint;
 
