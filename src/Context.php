@@ -2,7 +2,6 @@
 
 namespace PhpWebView;
 
-use FFI\CData;
 
 class Context
 {

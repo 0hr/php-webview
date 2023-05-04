@@ -1,5 +1,5 @@
 {
-    "name": "0hr/phpwebview",
+    "name": "0hr/php-webview",
     "description": "Php WebView",
     "autoload": {
         "psr-4": {

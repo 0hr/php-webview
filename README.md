@@ -4,10 +4,7 @@
 
 PHP bindings for [zserge's Webview](https://github.com/webview/webview)
 
-### Hello World Application
-
-
-<img src="./example/helloworld/helloworld.png" width="330px">
+### Hello World Application [Example](https://github.com/0hr/php-webview/tree/main/examples/helloworld)
 
 ```php
 <?php
@@ -27,7 +24,9 @@ $webview->destroy();
 
 ```
 
-### Binding
+<img src="examples/helloworld/helloworld.png" width="330px">
+
+### Bindings [Example](https://github.com/0hr/php-webview/tree/main/examples/bindings)
 
 ```php
 $webview->bind('save', function ($seq, $req, $context) use (&$list) {
@@ -47,4 +46,4 @@ $webview->bind('getList', function ($seq, $req, $context) use ($webview, &$list)
 });
 ```
 
-<img src="./example/binding/binding.png" width="330px">
+<img src="examples/bindings/bindings.png" width="330px">
