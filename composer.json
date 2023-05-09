@@ -1,16 +1,20 @@
 {
-    "name": "0hr/php-webview",
-    "description": "Php WebView",
-    "autoload": {
-        "psr-4": {
-            "PhpWebView\\": "src/"
-        }
-    },
-    "authors": [
-        {
-            "name": "0hr",
-            "email": "harunrasit@pekacar.net"
-        }
-    ],
-    "require": {}
+  "name": "0hr/php-webview",
+  "description": "Php zserge's Webview bindings",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "PhpWebView\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "0hr",
+      "homepage": "https://rasit.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.2",
+    "ext-ffi": "*"
+  }
 }
