@@ -4,6 +4,11 @@
 
 PHP bindings for [zserge's Webview](https://github.com/webview/webview)
 
+## Installation
+
+```shell
+composer require 0hr/php-webview
+```
 
 ### Hello World Application [Example](https://github.com/0hr/php-webview/tree/main/examples/helloworld)
 
