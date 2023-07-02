@@ -8,7 +8,6 @@ use PhpWebView\WindowSizeHint;
 
 $webview = new WebView('Php WebView', 480, 320, WindowSizeHint::HINT_NONE, true);
 
-$webview->setHTML('<center> Hello World </center>');
-
-$webview->run();
-$webview->destroy();
+$webview->setHTML('<center> Hello World </center>')
+    ->run()
+    ->destroy();

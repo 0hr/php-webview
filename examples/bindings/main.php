@@ -23,11 +23,8 @@ $webview->bind('save', function ($seq, $req, $context) use (&$list) {
     }
 
     return [];
-});
-
-$webview->bind('getList', function ($seq, $req, $context) use ($webview, &$list) {
+})->bind('getList', function ($seq, $req, $context) use ($webview, &$list) {
     $webview->returnValue($seq, 0, $list);
-});
-$webview->run();
-$webview->destroy();
+})->run()
+    ->destroy();
 
