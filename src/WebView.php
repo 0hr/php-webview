@@ -40,34 +40,21 @@ class WebView
         $this->webview = $this->ffi->webview_create((int)$this->debug, null);
     }
 
-    /**
-     * @return FFI
-     */
     public function getFFI(): FFI
     {
         return $this->ffi;
     }
 
-    /**
-     * @return mixed
-     */
-    public function getWebview()
+    public function getWebview(): mixed
     {
         return $this->webview;
     }
 
-
-    /**
-     * @return string
-     */
     public function getTitle(): string
     {
         return $this->title;
     }
 
-    /**
-     * @param string $title
-     */
     public function setTitle(string $title): self
     {
         $this->title = $title;
@@ -75,17 +62,11 @@ class WebView
         return $this;
     }
 
-    /**
-     * @return int
-     */
     public function getWidth(): int
     {
         return $this->width;
     }
 
-    /**
-     * @param int $width
-     */
     public function setWidth(int $width): self
     {
         $this->width = $width;
@@ -93,33 +74,21 @@ class WebView
         return $this;
     }
 
-    /**
-     * @return int
-     */
     public function getHeight(): int
     {
         return $this->height;
     }
 
-    /**
-     * @param int $height
-     */
     public function setHeight(int $height): void
     {
         $this->height = $height;
     }
 
-    /**
-     * @return WindowSizeHint
-     */
     public function getHint(): WindowSizeHint
     {
         return $this->hint;
     }
 
-    /**
-     * @param WindowSizeHint $hint
-     */
     public function setHint(WindowSizeHint $hint): self
     {
         $this->hint = $hint;
@@ -127,9 +96,6 @@ class WebView
         return $this;
     }
 
-    /**
-     * @return bool
-     */
     public function isDebug(): bool
     {
         return $this->debug;
@@ -214,7 +180,6 @@ class WebView
     }
 
     /**
-     * @return string
      * @throws OsException
      */
     private function getDefaultLibraryFile(): string
