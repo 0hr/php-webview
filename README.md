@@ -58,6 +58,6 @@ $webview->bind('getList', function ($seq, $req, $context) use ($webview, &$list)
 <img src="examples/bindings/binding.png" width="330px">
 
 ## Building
-For prerequisites, read (The link)[https://github.com/webview/webview#prerequisites]
+For prerequisites, read [The link](https://github.com/webview/webview#prerequisites)
 
 To build the library, run **src/webview/build.sh** on Unix-based systems, **src/webview/build.bat** on Windows
