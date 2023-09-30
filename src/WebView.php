@@ -10,7 +10,7 @@ use PhpWebView\FFI\Windows;
 
 class WebView
 {
-    private $ffi;
+    private FFI $ffi;
 
     private $webview;
 
