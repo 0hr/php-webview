@@ -189,10 +189,10 @@ class WebView
         }
 
         $this->libraryFile = match (PHP_OS_FAMILY) {
-            'Linux' => $this->baseDir . '/build/linux/webview_php_ffi.so',
-            'Darwin' => $this->baseDir . '/build/macos/webview_php_ffi.dylib',
+            'Linux'   => $this->baseDir . '/build/linux/webview_php_ffi.so',
+            'Darwin'  => $this->baseDir . '/build/macos/webview_php_ffi.dylib',
             'Windows' => $this->baseDir . '\build\windows\webview_php_ffi.dll',
-            default => throw OsException::OsNotSupported(),
+            default   => throw OsException::OsNotSupported(),
         };
 
 
